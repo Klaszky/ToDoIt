@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+#toDoList {
+    padding-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#toDoList td, #toDoList th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#toDoList tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#toDoList tr:hover{
+    background-color: #ddd;
+}
+
+#toDoList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+#toDoListComp {
+    width: 10%;
+}
+
+#toDoListDel {
+    width:  10%;
+}

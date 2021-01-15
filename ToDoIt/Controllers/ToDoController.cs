@@ -10,17 +10,17 @@ namespace ToDoIt.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ToDoListController : Controller
+    public class ToDoController : Controller
     {
-        private readonly ILogger<ToDoListController> _logger;
+        private readonly ILogger<ToDoController> _logger;
 
-        public ToDoListController(ILogger<ToDoListController> logger)
+        public ToDoController(ILogger<ToDoController> logger)
         {
             _logger = logger;
         }
 
-        [HttpGet("getToDo")]
-        public IEnumerable<ToDoListItem> GetToDo()
+        [HttpGet("getToDos")]
+        public IEnumerable<ToDoListItem> GetToDos()
         {
 
             var item1 = new ToDoListItem { Id = 0, IsFinished = true, Description = "Test 1"};

@@ -18,7 +18,7 @@ export class ToDoListService {
   constructor(private http:HttpClient) { }
 
   getToDoListItems(): Observable<ToDoListItem[]>{
-    const endpoint:string = `${this.backendUrl}/todolist/gettodo`
+    const endpoint:string = `${this.backendUrl}/todo/gettodos`
     return this.http.get<ToDoListItem[]>(endpoint);
   }
 }

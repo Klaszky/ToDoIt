@@ -1,21 +1,30 @@
 <div>
-  <p>Test</p>
-  <table>
+  <br />
+  <h1>What do you have to do today?</h1>
+  <br />
+  <table id="toDoList">
     <thead>
       <tr>
         <th>Completed</th>
         <th>Description</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
         <tr *ngFor="let toDoListItem of toDoListItems ">
-            <td><input 
+            <td id="toDoListComp">
+                <input 
                   type="checkbox" 
                   id="{{toDoListItem.id}}" 
                   [checked]="toDoListItem.isFinished"
                 />
               </td>
-            <td>{{ toDoListItem.description }}</td>
+            <td id="toDoListDesc">{{ toDoListItem.description }}</td>
+            <td id="toDoListDel">
+              <button>
+                X
+              </button>
+            </td>
         </tr>
     </tbody>
   </table>
