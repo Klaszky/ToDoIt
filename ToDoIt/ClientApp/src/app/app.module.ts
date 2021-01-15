@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ToDoListComponent } from './components/to-do-list/to-do-list.component';
 import { ToDoListTableComponent } from './components/to-do-list-table/to-do-list-table.component';
 
@@ -17,8 +15,6 @@ import { ToDoListTableComponent } from './components/to-do-list-table/to-do-list
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     ToDoListComponent,
     ToDoListTableComponent
   ],
@@ -28,8 +24,6 @@ import { ToDoListTableComponent } from './components/to-do-list-table/to-do-list
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
       { path: 'to-do', component: ToDoListComponent },
     ])
   ],
