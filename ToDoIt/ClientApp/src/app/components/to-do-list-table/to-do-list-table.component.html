@@ -1,0 +1,22 @@
+<div>
+  <p>Test</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Completed</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let toDoListItem of toDoListItems ">
+            <td><input 
+                  type="checkbox" 
+                  id="{{toDoListItem.id}}" 
+                  [checked]="toDoListItem.isFinished"
+                />
+              </td>
+            <td>{{ toDoListItem.description }}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
